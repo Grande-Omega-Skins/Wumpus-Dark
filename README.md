@@ -1,5 +1,5 @@
 # Wumpus Dark by VAC Efron
 
-![](wumpus-dark/screenshots/1.gif)
-![](wumpus-dark/screenshots/2.png)
-![](wumpus-dark/screenshots/3.png)
+![](screenshots/1.gif)
+![](screenshots/2.png)
+![](screenshots/3.png)
