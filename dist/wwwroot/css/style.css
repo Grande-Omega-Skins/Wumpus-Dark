@@ -54,6 +54,7 @@ a {
 }
 
 .navbar {
+  -webkit-app-region: drag;
   position: fixed;
   top: 0;
   height: 37px;
@@ -76,6 +77,7 @@ a {
 }
 
 .navbar__button {
+  -webkit-app-region: no-drag;
   color: #1a1a1a;
   background: none;
   border: none;
@@ -116,21 +118,27 @@ a {
 
 .breadcrumb a {
   color: #1a1a1a;
+  font-weight: 600;
 }
 
 .mymain {
-  margin-top: 115px;
+  margin-top: 68px;
 }
 
 .mymain__inner {
-  height: calc(99vh - var(--height-header));
+  height: calc(103.7vh - var(--height-header));
   overflow: hidden;
+}
+
+.col-xs-12{
+  margin-top: 35px;
 }
 
 .sidebar {
   border-right: 1px solid #141414;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #1a1a1a;
 }
 
 .sidebar a{
@@ -145,8 +153,7 @@ a {
 
 .sidebar .nav-item {
   position: relative;
-  border-bottom: 1px solid #141414;
-  min-height: 80px;
+  min-height: 64px;
   cursor: pointer;
 }
 
@@ -155,7 +162,8 @@ a {
 }
 
 .sidebar .nav-item.active {
-  background: #404040;
+  background: #363636;
+  border-right: 4px inset #7289DA;
 }
 
 .sidebar .nav-item.active:after {
@@ -169,7 +177,7 @@ a {
 }
 
 .sidebar .nav-item:hover{
-  background-color: #404040;
+  background-color: #363636;
 }
 
 .sidebar .nav-link {
@@ -192,11 +200,11 @@ a {
 }
 
 .nav-item__icon.oi-circle-check:before {
-  color: #1ad16c;
+  color:#7289DA;
 }
 
 .nav-item__icon.oi-circle-x:before {
-  color: #ff2626;
+  color: #ff3c3c;
 }
 
 .sidebar__icon--open,
@@ -236,23 +244,30 @@ a {
 }
 
 .chapters-title, .exams-title{
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin-bottom: -20px;
+  margin-left: 2px;
+  padding-top: 35px;
 }
 
 .exams-title{
   margin-top: 20px;
 }
 
+.chapter{
+  border-bottom: 4px inset #7289DA;
+}
+
 .chapter:hover{
   background-color: #404040;
   transform: translateY(-3px);
   color: white;  
-  transition: .05s;
+  border-bottom: 5px inset #7f94e0;
+  transition: .1s;
 }
 
 .main-content {
   height: 100%;
+  padding-top: 45px;
 }
 
 .main-content--scroll {
@@ -437,7 +452,7 @@ td {
 }
 
 .myGlyphMarginClass {
-  background: red;
+  background: rgb(243, 64, 64);
   border-radius: 50%;
   border:1px solid #000;
   width: 10px;
@@ -447,7 +462,7 @@ td {
   margin-left: 15px;
 }
 .myGlyphMarginHitClass {
-  background: #ffc400;
+  background: #ffdb63;
   border-radius: 50%;
   border:1px solid #000;
   width: 10px;
@@ -503,12 +518,12 @@ td {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7289DA; 
+  background: #383838; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6374b3; 
+  background: #212121; 
 }
 
 .spacing--bottom {
