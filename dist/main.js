@@ -15,7 +15,7 @@ let mainWindow
 function createWindow () {
 
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1024, height: 768, webPreferences:{devTools:true}, icon:`${__dirname}/wwwroot/assets/icon.png`})
+  mainWindow = new BrowserWindow({width: 1024, height: 768, webPreferences:{devTools:true}, icon:`${__dirname}/wwwroot/assets/icon.png`, frame: false})
   mainWindow.setFullScreen(false)
   // mainWindow.setMenu(null)
 
