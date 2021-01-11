@@ -72,6 +72,10 @@ a {
   margin-bottom: 0;
 }
 
+.alert.alert-info {
+  background-color: #7289DA;
+}
+
 .oi-x{
   margin-right: -11px !important;
 }
